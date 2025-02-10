@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Product } from "../models/product";
-import Catalog from "./catalog/Catalog";
+import Catalog from "../../features/catalog/Catalog";
 import { Box, Container, createTheme, CssBaseline, ThemeProvider } from "@mui/material";
-import NavBar from "./navbar";
+import NavBar from "./NavBar";
 
 function App() {
 
@@ -12,7 +12,8 @@ function App() {
 
   const theme = createTheme({
     palette: {
-      mode: palleteType, background: {
+      mode: palleteType,
+      background: {
         default: (palleteType === 'light') ? '#eaeaea' : '#121212'
       }
     }
@@ -40,7 +41,7 @@ function App() {
             : 'radial-gradient(circle, #baecf9, #f0f9ff)',
           py: 6
         }}>
-        <Container maxWidth='xl' sx={{ mt: 14 }}>
+        <Container maxWidth='xl' sx={{ mt: 8 }}>
           <Catalog products={products} />
         </Container>
       </Box>

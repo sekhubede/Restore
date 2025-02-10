@@ -6,7 +6,7 @@ type Props = {
     darkMode: boolean;
 }
 
-export default function navbar({ darkMode, toggleDarkMode }: Props) {
+export default function Navbar({ darkMode, toggleDarkMode }: Props) {
     return (
         <AppBar position="fixed">
             <Toolbar>

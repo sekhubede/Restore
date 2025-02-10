@@ -1,5 +1,5 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material"
-import { Product } from "../../models/product"
+import { Product } from "../../app/models/product"
 
 type Props = {
     product: Product
@@ -10,7 +10,7 @@ export default function ProductCard({ product }: Props) {
         <Card
             elevation={3}
             sx={{
-                maxWidth: 280,
+                width: 280,
                 borderRadius: 2,
                 display: 'flex',
                 flexDirection: 'column',
